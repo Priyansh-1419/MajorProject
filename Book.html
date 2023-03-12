@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTOR BOOKING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #5c71de">
+            <div class="container-fluid">
+                <img class="navbar-brand" src="sistec-img.png" width="47" height="58">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://www.sistec.ac.in/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/about-sagar-group-bhopal">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/sagar-colleges-bhopal">Colleges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/courses-sagar-institute-bhopal">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/training-and-placement">Placements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/student-college-life">Life @ SISTec</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/events-and-gallery">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/careers">Carrers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.sistec.ac.in/erp">ERP</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn" style="background-color:white" type="submit">Booked Slots</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <section id="mobile-navigation">
+        <div class="flex-me">
+            <div> <a href="https://www.sistec.ac.in/"> <img
+                        src="https://www.sistec.ac.in/assets/common/images/sistec-badge-dark.png" alt="sistec-badge"
+                        style="width: 65px"> </a> </div>
+            <div class="hamburger-menu">
+                <div class="button_container" id="header-menu-toggle"> <span class="top"></span> <span
+                        class="middle"></span> <span class="bottom"></span> </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/home"> Home </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/about-sagar-group-bhopal"> About Us </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/sagar-colleges-bhopal"> Colleges </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/courses-sagar-institute-bhopal"> Courses </a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/training-and-placement"> Placements </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/student-college-life"> Life @ SISTec </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/admissions"> Admissions </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/events-and-gallery"> Events </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://www.sistec.ac.in/careers"> Careers </a> </li>
+                    <li class="active"> <a href="https://www.sistec.ac.in/erp"> ERP </a> </li> -->
+                <!-- </ul>
+            </nav>
+        </div>
+    </section> --> 
+
+    <!-- <div id="fixed-controls" class="">
+        <div> <a href="https://www.sistec.ac.in/admissions#sistec-admission-form" class="afn-btn"> <img
+                    src="https://www.sistec.ac.in/assets/web/images/admissions/admission.png"> <span
+                    class="ff-semibold">Admission Enquiry</span> </a> <a href="https://www.sistec.ac.in/admissions#faqs"
+                class="afn-btn"> <img src="https://www.sistec.ac.in/assets/web/images/admissions/faq.png"> <span
+                    class="ff-semibold">FAQs</span> </a> <a
+                href="https://www.sistec.ac.in/assets/web/pdf/Admission-Brochure-2022-SISTec.pdf" class="afn-btn"
+                target="_blank"> <img src="https://www.sistec.ac.in/assets/web/images/admissions/brochure.png"> <span
+                    class="ff-semibold">Download Brochure</span> </a> <a href="tel:9109975760" class="afn-btn"> <img
+                    src="https://www.sistec.ac.in/assets/web/images/admissions/call.png" class="wid-40"> <span
+                    class="ff-semibold">Call</span> </a> <a href="https://wa.me/919109975760" class="afn-btn"> <img
+                    src="https://www.sistec.ac.in/assets/web/images/admissions/whatsapp.png" class="wid-40"> <span
+                    class="ff-semibold">WhatsApp</span> </a> </div>
+    </div> -->
+
+
+    <!-- <section id="lower-navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="sistec-badge-div"> <img
+                            src="https://www.sistec.ac.in/assets/common/images/sistec-badge-light.png"
+                            alt="sistec-badge" id="sistec-badge" class=""> </div>
+                    <ul class="lower-nav-flex">
+                        <li class=""> <a href="https://www.sistec.ac.in/home"> Home </a> </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/about-sagar-group-bhopal"> About Us </a> </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/sagar-colleges-bhopal"> Colleges </a>
+                            <div class="sub-menu-div">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="sub-menu-content">
+                                                <div class="left">
+                                                    <ul class="nav-list" data-id="colleges-sub-menu-content">
+                                                        <li class="active" data-id="sistec"> <a href="#!">SISTec</a>
+                                                        </li>
+                                                        <li data-id="sistecr"> <a href="#!">SISTec-R</a> </li>
+                                                        <li data-id="sistece"> <a href="#!">SISTec-E</a> </li>
+                                                        <li data-id="siptec"> <a href="#!">SIPTec</a> </li>
+                                                        <li data-id="sistecmba"> <a href="#!">SISTec MBA</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="colleges-sub-menu-content" class="right">
+                                                    <div id="sistec" class="sub-div active">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> SISTec </h1>
+                                                                <p> SISTec is an advanced engineering institute, keen on
+                                                                    imparting industry-relevant skills to the students
+                                                                    with an aim to create professionals with a distinct
+                                                                    edge. </p> <a
+                                                                    href="https://www.sistec.ac.in/sagar-institute-science-technology"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/sistec-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="sistecr" class="sub-div">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> SISTec-R </h1>
+                                                                <p> SISTec-R is the multi-disciplinary research hub with
+                                                                    distinguished industrial tie-ups promoting
+                                                                    industry-academic interface and a spirit of
+                                                                    innovation among students. </p> <a
+                                                                    href="https://www.sistec.ac.in/sagar-institute-science-technology-research"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/sistecr-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="sistece" class="sub-div">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> SISTec-E </h1>
+                                                                <p> SISTec-E is a highly regarded engineering college
+                                                                    providing immaculate tech education for the overall
+                                                                    academic development of our budding engineers. </p>
+                                                                <a href="https://www.sistec.ac.in/sagar-institute-science-technology-engineering"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/sistece-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="siptec" class="sub-div">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> SIPTec </h1>
+                                                                <p> SIPTec is a premium institute of pharmacy with
+                                                                    professionally designed technical modules ensuring
+                                                                    quality training for incipient pharmacists. </p> <a
+                                                                    href="https://www.sistec.ac.in/sagar-institute-pharmacy-technology"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/siptec-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="sistecmba" class="sub-div">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> SISTec-MBA </h1>
+                                                                <p> SISTec MBA is the prominent B-school committed to
+                                                                    bringing out the entrepreneurial spirit to make them
+                                                                    formidable future leaders and the Change for
+                                                                    Tomorrow. </p> <a
+                                                                    href="https://www.sistec.ac.in/business-school-management-studies"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/sistecmba-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/courses-sagar-institute-bhopal"> Courses </a>
+                            <div class="sub-menu-div">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="sub-menu-content">
+                                                <div class="left">
+                                                    <ul class="nav-list" data-id="courses-sub-menu-content">
+                                                        <li class="active" data-id="collegeid-engineering"> <a href="#!"
+                                                                class="text-uppercase">Engineering</a> </li>
+                                                        <li data-id="collegeid-pharmacy"> <a href="#!"
+                                                                class="text-uppercase">Pharmacy</a> </li>
+                                                        <li data-id="collegeid-mba"> <a href="#!"
+                                                                class="text-uppercase">MBA</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="courses-sub-menu-content" class="right">
+                                                    <div id="collegeid-engineering" class="sub-div active">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> Engineering </h1>
+                                                                <p> The Engineering program focuses on industry-oriented
+                                                                    education to make competent engineering
+                                                                    professionals skilled in their respective fields
+                                                                    with the potential to expand their horizons in
+                                                                    interdisciplinary streams. </p> <a
+                                                                    href="https://www.sistec.ac.in/courses-sagar-institute-bhopal#engineering"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/engg-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collegeid-pharmacy" class="sub-div">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> Pharmacy </h1>
+                                                                <p> The Pharmacy program provides students with an
+                                                                    in-depth knowledge of the pharmaceutical industry
+                                                                    with a significant focus on lab workings in sync
+                                                                    with the latest technological developments of the
+                                                                    industry. </p> <a
+                                                                    href="https://www.sistec.ac.in/courses-sagar-institute-bhopal#pharmacy"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/pharm-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collegeid-mba" class="sub-div">
+                                                        <div class="content-flex">
+                                                            <div class="text-div">
+                                                                <h1 class="title"> MBA </h1>
+                                                                <p> The MBA program adds to the previous coursework of
+                                                                    the students and allows them to gain an in-depth
+                                                                    knowledge of the general prospects of business
+                                                                    administration and excel with great skill and
+                                                                    expertise. </p> <a
+                                                                    href="https://www.sistec.ac.in/courses-sagar-institute-bhopal#mba"
+                                                                    class="web-btn-one spacing-top">
+                                                                    <span>Explore</span> <i
+                                                                        class="fas fa-arrow-right"></i> </a>
+                                                            </div>
+                                                            <div class="img-div"> <video autoplay="" loop="" muted="">
+                                                                    <source
+                                                                        src="https://www.sistec.ac.in/assets/web/videos/colleges/mba-nav-video.mp4">
+                                                                </video> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/training-and-placement"> Placements </a> </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/student-college-life" class="text-capitalize">
+                                LIFE @ SISTec </a> </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/admissions"> Admissions </a> </li>
+                        <li class=""> <a href="https://www.sistec.ac.in/events-and-gallery"> Events </a> </li>
+                        <li class="active" id="others-li"> <a href="https://www.sistec.ac.in/erp"> ERP </a>
+                             <div class="others-sub-menu"> <ul> <li class="#"> <a href="https://cimsstudent.mastersofterp.in/" target="_blank">Student Login</a> </li> <li class="#"> <a href="https://cims.mastersofterp.in/" target="_blank">Employee Login</a> </li> <li class="#"> <a href="https://www.sistec.ac.in/donwload-mobile-apps" target="_blank">Download Mobile Apps</a> </li> </ul> </div> -->
+    <!-- </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <table class="table caption-top table-hover table-bordered">
+        <caption>BOOK PROJECTOR</caption>
+        <thead>
+            <tr>
+                <th scope="col">DATES</th>
+                <th scope="col">9:35-10:35</th>
+                <th scope="col">10:35-11:35</th>
+                <th scope="col">11:35-12:35</th>
+                <th scope="col">1:15-2:15</th>
+                <th scope="col">2:15:-3:15</th>
+                <th scope="col">3:15-4:15</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><input type="text" id="date1" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" id="date2" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" id="date3" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" id="date4" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" id="date5" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" id="date6" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="text" id="date7" style="border:none"></th>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 1</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 2</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 3</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 4</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 5</button></td>
+                <td><button style="padding-left: 50px; padding-right: 50px">LECTURE 6</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    function setDate(i, dateId) {
+        const date = new Date();
+        date.setDate(date.getDate() + i);
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+
+        // This arrangement can be altered based on how we want the date's format to appear.
+        let currentDate = `${day}/${month}/${year}`;
+        document.getElementById(dateId).value = currentDate;
+        document.getElementById(dateId).readOnly = true;
+        console.log(currentDate);
+         // "17-6-2022"
+    };
+
+    for(let i=1; i<=7; i++){
+        let dateId = "date" + i;
+        console.log(dateId);
+        setDate(i-1,dateId);
+    }
+
+    
+</script>
+
+</html>
