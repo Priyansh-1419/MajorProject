@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- <img src="LOGO.png" class="rounded float-left"> -->
+      <div class="title-text">
+        <div class="title login">Book Your Projector</div>
+        <div class="title signup">Book Your Projector</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form method="post" class="login">
+
+            <div class="field">
+              <input type="text" name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+            
+            <div class="field">
+              <input type="password" name="password" placeholder="Password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" required>
+            </div>
+            
+            <!--<div class="pass-link"><a href="#">Forgot password?</a></div>-->
+            
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <a href="/book">
+              <input type="submit" value="Login" >
+              </a>
+            </div>
+            
+            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+          </form>
+          
+          <form action="/signup" method="post" class="signup" >
+            <div class="field">
+              <input type="email" name="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+            <div class="field">
+              <input type="password" name="password" placeholder="Password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" required>
+            </div>
+            <div class="field">
+              <input type="password" name="cpassword" placeholder="Confirm password" required>
+            </div>
+            <div class="field">
+              <input type="number" name="emp_Id" placeholder="Employee Id" pattern="[0-9]" required>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" onclick = "matchPassword()" value="Signup">
+            </div>
+          </form>
+        </div>
+      
+      </div>
+    </div>
+  
+<script>
+
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+
+
+  function matchPassword() {  
+  var pw1 = document.getElementById("password");  
+  var pw2 = document.getElementById("cpassword");  
+  if(pw1 != pw2)  
+  {   
+    alert("Please type correct passwords");  
+  } else {  
+    alert("Password created successfully");  
+  }  
+}  
+
+</script>
+
+</body>
+</html>
